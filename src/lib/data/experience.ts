@@ -61,7 +61,7 @@ export const items: Array<Experience> = [
 	  color: 'red',
 	  links: [],
 	  logo: Assets.Unknown,
-	  shortDescription: 'Amélioration du LMS avec un système de recommandation en temps réel et une intégration de reconnaissance faciale pour une expérience utilisateur personnalisée.'
+	  shortDescription: 'Amelioration du LMS avec un système de recommandation en temps réel et une intégration de reconnaissance faciale pour une expérience utilisateur personnalisée.'
 	}
   ]
   ;
