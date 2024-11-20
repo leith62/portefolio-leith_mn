@@ -1,3 +1,9 @@
 export const data = '';
 
-export const title = 'Resumé';
+
+
+export const resumeData = {
+    file: '/cv.pdf', // Chemin vers ton fichier PDF dans le dossier `static`
+    title: 'Mon CV',
+  };
+  

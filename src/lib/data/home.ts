@@ -8,8 +8,7 @@ export const name = 'Manaa';
 export const lastName = 'Leith';
 
 export const description =
-	'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, rerum. Debitis accusantium deleniti enim iste dignissimos? Similique, exercitationem! Odit vero, numquam quae ratione maxime sunt reiciendis laudantium quaerat iure ipsum!';
-
+"Étudiant en dernière année d'ingénierie informatique spécialisé en BI et Big Data, je suis passionné par l'analyse des données et les technologies de traitement des données massives. Grâce à mes projets académiques, j'ai développé des compétences solides en Machine Learning, Big Data Analytics et gestion de bases de données, avec des outils tels qu'Apache Spark, Kafka et Python. Je suis à la recherche d'un stage PFE pour mettre à profit mes compétences et contribuer à des projets innovants dans le domaine de la Data Science, tout en approfondissant mes connaissances professionnelles."
 export const links: Array<{ platform: Platform; link: string }> = [
 	{ platform: Platform.GitHub, link: 'https://github.com/leith62' },
 	{

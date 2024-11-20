@@ -1,30 +1,44 @@
-<script>
-	import { data, title } from '@data/resume';
+<script lang="ts">
+  import { resumeData } from '$lib/data/resume';
+  import CommonPage from '$lib/components/CommonPage.svelte';
 
-	import Chip from '$lib/components/Chip/Chip.svelte';
-	import CommonPage from '$lib/components/CommonPage.svelte';
+  const { file, title } = resumeData;
 </script>
 
 <CommonPage {title}>
-	<div class="resume">
-		{#if data}
-			<a href={data} download>
-				<Chip size={'1.25em'}>Download</Chip>
-			</a>
-		{:else}
-			<Chip>Ooops! no CV at the moment.</Chip>
-		{/if}
-	</div>
+  <div class="resume">
+   
+
+    <!-- Intégration du fichier PDF pour lecture -->
+    <iframe
+      src={file}
+      title="PDF Viewer"
+      width="100%"
+      height="600px"
+      style="border: none; margin-top: 20px;"
+    ></iframe>
+  </div>
 </CommonPage>
 
 <style lang="scss">
-	.resume {
-		display: flex;
-		justify-content: center;
-		margin-top: 20px;
+  .resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
 
-		& > a {
-			color: inherit;
-		}
-	}
+    a {
+      color: inherit;
+      text-decoration: none;
+      margin-bottom: 20px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    iframe {
+      border: 1px solid #ccc;
+    }
+  }
 </style>
